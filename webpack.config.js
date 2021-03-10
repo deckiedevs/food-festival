@@ -22,6 +22,7 @@ module.exports = {
                     {
                         loader: 'file-loader', 
                         options: {
+                            esModule: false,
                             name(file) {
                                 return '[path][name].[ext]'
                             },
@@ -54,6 +55,7 @@ module.exports = {
             theme_color: '#ffffff',
             fingerprints: false,
             inject: false,
+            publicPath: './',
             icons: [{ 
                 src: path.resolve('assets/img/icons/icon-512x512.png'),
                 sizes: [96, 128, 192, 256, 384, 512],
